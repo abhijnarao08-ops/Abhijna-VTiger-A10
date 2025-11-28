@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="3" ignored="0" total="4" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[test method on start]]>
+    </line>
+    <line>
+      <![CDATA[LE_001 Test method started]]>
+    </line>
+    <line>
+      <![CDATA[LE_001 Test method skipped]]>
+    </line>
+    <line>
+      <![CDATA[LE_001 Test method started]]>
+    </line>
+    <line>
+      <![CDATA[LE_001 Test method skipped]]>
+    </line>
+    <line>
+      <![CDATA[LE_001 Test method started]]>
+    </line>
+    <line>
+      <![CDATA[LE_001 Test method skipped]]>
+    </line>
+    <line>
+      <![CDATA[LE_001 Test method started]]>
+    </line>
+    <line>
+      <![CDATA[LE_001 Test method successfully executed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-11-18T17:59:05 IST" name="Default suite" finished-at="2025-11-18T18:00:31 IST" duration-ms="86119">
+    <groups>
+      <group name="Sanity">
+        <method signature="TC_001.LE_001()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" name="LE_001" class="testCaseRepo.TC_001"/>
+      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="TC_001.LE_001()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" name="LE_001" class="testCaseRepo.TC_001"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2025-11-18T17:59:05 IST" name="Default test" finished-at="2025-11-18T18:00:31 IST" duration-ms="86119">
+      <class name="testCaseRepo.TC_001">
+        <test-method is-config="true" signature="createDBConnection()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T17:59:05 IST" name="createDBConnection" finished-at="2025-11-18T17:59:05 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDBConnection -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T17:59:05 IST" name="browserLaunch" finished-at="2025-11-18T17:59:11 IST" duration-ms="5689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T17:59:11 IST" name="loginOperation" finished-at="2025-11-18T17:59:16 IST" duration-ms="5214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method retried="true" signature="LE_001()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T17:59:16 IST" name="LE_001" finished-at="2025-11-18T17:59:29 IST" duration-ms="12517" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testCaseRepo.TC_001.LE_001(TC_001.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[LE_001 Test method started]]>
+            </line>
+            <line>
+              <![CDATA[LE_001 Test method skipped]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LE_001 -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T17:59:29 IST" name="logoutOperation" finished-at="2025-11-18T17:59:31 IST" duration-ms="2431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T17:59:31 IST" name="loginOperation" finished-at="2025-11-18T17:59:35 IST" duration-ms="3725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method retried="true" signature="LE_001()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T17:59:35 IST" name="LE_001" finished-at="2025-11-18T17:59:45 IST" duration-ms="10348" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testCaseRepo.TC_001.LE_001(TC_001.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[LE_001 Test method started]]>
+            </line>
+            <line>
+              <![CDATA[LE_001 Test method skipped]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LE_001 -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T17:59:45 IST" name="logoutOperation" finished-at="2025-11-18T17:59:47 IST" duration-ms="2080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T17:59:47 IST" name="loginOperation" finished-at="2025-11-18T17:59:48 IST" duration-ms="389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method retried="true" signature="LE_001()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T17:59:48 IST" name="LE_001" finished-at="2025-11-18T18:00:02 IST" duration-ms="14629" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testCaseRepo.TC_001.LE_001(TC_001.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[LE_001 Test method started]]>
+            </line>
+            <line>
+              <![CDATA[LE_001 Test method skipped]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LE_001 -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T18:00:02 IST" name="logoutOperation" finished-at="2025-11-18T18:00:05 IST" duration-ms="2220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T18:00:05 IST" name="loginOperation" finished-at="2025-11-18T18:00:09 IST" duration-ms="4320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method signature="LE_001()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T18:00:09 IST" name="LE_001" finished-at="2025-11-18T18:00:28 IST" duration-ms="19260" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[LE_001 Test method started]]>
+            </line>
+            <line>
+              <![CDATA[LE_001 Test method successfully executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LE_001 -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T18:00:28 IST" name="logoutOperation" finished-at="2025-11-18T18:00:31 IST" duration-ms="2313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T18:00:31 IST" name="closeBrowser" finished-at="2025-11-18T18:00:31 IST" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeDBConnection()[pri:0, instance:testCaseRepo.TC_001@3b0090a4]" started-at="2025-11-18T18:00:32 IST" name="closeDBConnection" finished-at="2025-11-18T18:00:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDBConnection -->
+      </class> <!-- testCaseRepo.TC_001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
