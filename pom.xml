@@ -66,7 +66,7 @@
 				<version>3.5.4</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng_SmokeGroupExecution.xml</suiteXmlFile>
+						<suiteXmlFile>testng_SmokeGroup.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
@@ -84,7 +84,7 @@
 				<version>3.5.4</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng_SanityGroupExecution.xml</suiteXmlFile>
+						<suiteXmlFile>testng_SanityGroup.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
