@@ -37,9 +37,9 @@ public class TC_003 extends BaseClass
 	 * this method is to execute maven command mvn -Dtest=className#methodName im command prompt ( method level execution)
 	 * mvn -Dtest=className test is for class level execution
 	 */
-	@Test
-	public void m1()
-	{
-		System.out.println("Abhijna");
-	}
+//	@Test
+//	public void m1()
+//	{
+//		System.out.println("Abhijna");
+//	}
 }
